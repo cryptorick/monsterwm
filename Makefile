@@ -22,8 +22,8 @@ EXEC = ${WMNAME}
 SRC = ${WMNAME}.c
 OBJ = ${SRC:.c=.o}
 
-all: CFLAGS += -Os
-all: LDFLAGS += -s
+CFLAGS += -Os
+LDFLAGS += -s
 all: options ${WMNAME}
 
 debug: CFLAGS += -O0 -g
